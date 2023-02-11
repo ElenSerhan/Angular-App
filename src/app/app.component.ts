@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,3 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'patrice-lover';
 }
+
+export class ProjectsService {
+  public getProjects(): any[] {
+      let projects = [];
+
+      projects.push({ title: 'Project 1', description: '[DESCRIPTION]'});
+      projects.push({ title: 'Project 2', description: '[DESCRIPTION]'});
+
+      return projects;
+  }
+}
+
+
